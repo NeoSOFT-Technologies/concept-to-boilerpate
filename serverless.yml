@@ -11,6 +11,8 @@ provider:
 functions:
   hello:
     handler: handler.hello
+    events:
+      - http: GET /hello
 
 plugins:
   - serverless-plugin-typescript
